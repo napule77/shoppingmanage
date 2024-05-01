@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     UsersService userService;
 
-    @GetMapping("findByEmail")
+    @GetMapping("/findEmailUser")
     public ResponseEntity<Users> getByEmail(@RequestParam String email) {
         return new ResponseEntity<Users>(userService.findByEmail(email), HttpStatus.OK);
                 
