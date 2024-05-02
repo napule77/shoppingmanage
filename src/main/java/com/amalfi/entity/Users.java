@@ -1,5 +1,7 @@
 package com.amalfi.entity;
 
+import java.util.Date;
+
 import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,18 +23,18 @@ public class Users
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public long iduser;
-	public String nome;
-	public String cognome;
+	private long iduser;
+	private String nome;
+	private String cognome;
 	
-	public String email;
-	public String password;
-	public String token_send;
-	public String token_received;
-	public boolean abilitato;
+	private String email;
+	private String password;
+	private String token_send;
+	private String token_received;
+	private boolean abilitato;
 	@JsonFormat(pattern="yyyy-MM-dd HH:mm", timezone = "Europe/Rome")
-	public java.sql.Date datacreazione;
+	private Date datacreazione;
 	@JsonFormat(pattern="yyyy-MM-dd HH:mm", timezone = "Europe/Rome")
-	public java.sql.Date dataricezionetoken;
+	private Date dataricezionetoken;
 
 }
