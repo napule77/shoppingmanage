@@ -2,7 +2,6 @@ package com.amalfi.entity;
 
 import java.util.Date;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

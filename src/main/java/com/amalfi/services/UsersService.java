@@ -1,8 +1,5 @@
 package com.amalfi.services;
 
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
